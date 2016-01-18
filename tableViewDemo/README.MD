@@ -1,1 +1,4 @@
-## swift的tableView
+ - swift写的的tableView
+ - 用storyboard搭建的界面
+ - 用storyboard来签的协议代理
+ - storyboard导航栏问题, 重新设置tableView的现实
