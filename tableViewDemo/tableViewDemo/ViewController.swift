@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -30,14 +30,18 @@ class ViewController: UIViewController {
         Int) -> Int{
             return 10
     }
+    // row height
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60;
+    }
     
     //DetailCells
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
         NSIndexPath) -> UITableViewCell{
             let cell:UITableViewCell = UITableViewCell(style:
                 UITableViewCellStyle.Subtitle, reuseIdentifier: nil)
-            cell.textLabel!.text = "Cell text"
-            cell.detailTextLabel?.text = "Cell Subtitle"
+            cell.textLabel!.text = "系统Cell的标题"
+            cell.detailTextLabel?.text = "系统Cell的Subtitle"
             cell.imageView!.image = UIImage(named:"image1.png")
             return cell
     }

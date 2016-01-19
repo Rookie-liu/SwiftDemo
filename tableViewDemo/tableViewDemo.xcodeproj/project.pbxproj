@@ -13,6 +13,7 @@
 		655866F81C4CFEE5009907E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655866F71C4CFEE5009907E8 /* Assets.xcassets */; };
 		655866FB1C4CFEE5009907E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655866F91C4CFEE5009907E8 /* LaunchScreen.storyboard */; };
 		655867031C4D0055009907E8 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 655867021C4D0055009907E8 /* image1.png */; };
+		655867051C4E0D29009907E8 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655867041C4E0D29009907E8 /* CustomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		655866FA1C4CFEE5009907E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655866FC1C4CFEE5009907E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		655867021C4D0055009907E8 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		655867041C4E0D29009907E8 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				655867021C4D0055009907E8 /* image1.png */,
 				655866F01C4CFEE5009907E8 /* AppDelegate.swift */,
+				655867041C4E0D29009907E8 /* CustomViewController.swift */,
 				655866F21C4CFEE5009907E8 /* ViewController.swift */,
 				655866F41C4CFEE5009907E8 /* Main.storyboard */,
 				655866F71C4CFEE5009907E8 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655867051C4E0D29009907E8 /* CustomViewController.swift in Sources */,
 				655866F31C4CFEE5009907E8 /* ViewController.swift in Sources */,
 				655866F11C4CFEE5009907E8 /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +292,7 @@
 				655867011C4CFEE5009907E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
