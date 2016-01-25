@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9o5-OH-uUT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RLz-3a-0WJ">
+            <objects>
+                <navigationController id="9o5-OH-uUT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dJm-aT-Qe7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cnM-gT-KZQ" kind="relationship" relationship="rootViewController" id="zGQ-G4-7dl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UsQ-bv-glb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-223" y="626"/>
+        </scene>
+        <!--gestures-->
+        <scene sceneID="lte-Dh-K1N">
+            <objects>
+                <viewController id="cnM-gT-KZQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EOs-Rk-9J0"/>
+                        <viewControllerLayoutGuide type="bottom" id="uZ4-pK-tSk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z4g-y4-6mg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pix-h3-Spj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dh8-kM-tRR"/>
+                                    <constraint firstAttribute="width" constant="192" id="vmx-1d-s5d"/>
+                                </constraints>
+                                <state key="normal" title="双击手势/GestureDoubleTab"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dh8-kM-tRR"/>
+                                        <exclude reference="vmx-1d-s5d"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dh8-kM-tRR"/>
+                                        <include reference="vmx-1d-s5d"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="qnC-2n-pKd" kind="push" id="zm1-W1-1a7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uui-Ah-aGZ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LTe-AP-gSS"/>
+                                    <constraint firstAttribute="width" constant="192" id="WmS-QP-VUS"/>
+                                </constraints>
+                                <state key="normal" title="长按手势/GestureLongPress"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LTe-AP-gSS"/>
+                                        <exclude reference="WmS-QP-VUS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LTe-AP-gSS"/>
+                                        <include reference="WmS-QP-VUS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="yoB-XA-Ax3" kind="push" id="NXI-n2-cc4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-P3-f3C">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="a5R-KT-aTW"/>
+                                    <constraint firstAttribute="height" constant="30" id="sd9-T7-LDn"/>
+                                </constraints>
+                                <state key="normal" title="缩放手势/PinchGesture"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="a5R-KT-aTW"/>
+                                        <exclude reference="sd9-T7-LDn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="a5R-KT-aTW"/>
+                                        <include reference="sd9-T7-LDn"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="2pS-jP-Z5Z" kind="push" id="mlm-a7-Mwp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCK-h2-rtW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="1yN-ml-vCm"/>
+                                    <constraint firstAttribute="height" constant="30" id="Q0B-9H-eGj"/>
+                                </constraints>
+                                <state key="normal" title="旋转手势/RotateGesture"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1yN-ml-vCm"/>
+                                        <exclude reference="Q0B-9H-eGj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1yN-ml-vCm"/>
+                                        <include reference="Q0B-9H-eGj"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="CyM-JO-yP5" kind="push" id="xgL-mX-9EG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndp-vz-TZx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="jQ4-6a-nNz"/>
+                                    <constraint firstAttribute="height" constant="30" id="mXC-JM-0vq"/>
+                                </constraints>
+                                <state key="normal" title="滑动手势/Gesture"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jQ4-6a-nNz"/>
+                                        <exclude reference="mXC-JM-0vq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="jQ4-6a-nNz"/>
+                                        <include reference="mXC-JM-0vq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="Y2Q-3T-PkK" kind="push" id="doO-3n-u6C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ra-P3-f3C" firstAttribute="top" secondItem="uui-Ah-aGZ" secondAttribute="bottom" constant="50" id="7hT-Pu-vVa"/>
+                            <constraint firstItem="pix-h3-Spj" firstAttribute="top" secondItem="EOs-Rk-9J0" secondAttribute="bottom" constant="50" id="7qp-IL-sHq"/>
+                            <constraint firstItem="ndp-vz-TZx" firstAttribute="centerX" secondItem="z4g-y4-6mg" secondAttribute="centerX" id="EwU-vV-DCJ"/>
+                            <constraint firstItem="VCK-h2-rtW" firstAttribute="top" secondItem="6ra-P3-f3C" secondAttribute="bottom" constant="50" id="G8g-Ir-rSs"/>
+                            <constraint firstItem="uui-Ah-aGZ" firstAttribute="centerX" secondItem="z4g-y4-6mg" secondAttribute="centerX" id="Ho0-sJ-HQa"/>
+                            <constraint firstItem="uui-Ah-aGZ" firstAttribute="top" secondItem="pix-h3-Spj" secondAttribute="bottom" constant="50" id="J2a-bq-FAE"/>
+                            <constraint firstItem="pix-h3-Spj" firstAttribute="centerX" secondItem="z4g-y4-6mg" secondAttribute="centerX" id="bkC-vW-MQF"/>
+                            <constraint firstItem="VCK-h2-rtW" firstAttribute="centerX" secondItem="z4g-y4-6mg" secondAttribute="centerX" id="ceb-Z0-dPX"/>
+                            <constraint firstItem="6ra-P3-f3C" firstAttribute="centerX" secondItem="z4g-y4-6mg" secondAttribute="centerX" id="fMJ-s1-NgM"/>
+                            <constraint firstItem="ndp-vz-TZx" firstAttribute="top" secondItem="VCK-h2-rtW" secondAttribute="bottom" constant="50" id="hyN-cI-aUm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pix-h3-Spj"/>
+                                <exclude reference="uui-Ah-aGZ"/>
+                                <exclude reference="6ra-P3-f3C"/>
+                                <exclude reference="VCK-h2-rtW"/>
+                                <exclude reference="ndp-vz-TZx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7qp-IL-sHq"/>
+                                <exclude reference="bkC-vW-MQF"/>
+                                <exclude reference="Ho0-sJ-HQa"/>
+                                <exclude reference="J2a-bq-FAE"/>
+                                <exclude reference="7hT-Pu-vVa"/>
+                                <exclude reference="fMJ-s1-NgM"/>
+                                <exclude reference="G8g-Ir-rSs"/>
+                                <exclude reference="ceb-Z0-dPX"/>
+                                <exclude reference="EwU-vV-DCJ"/>
+                                <exclude reference="hyN-cI-aUm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pix-h3-Spj"/>
+                                <include reference="uui-Ah-aGZ"/>
+                                <include reference="6ra-P3-f3C"/>
+                                <include reference="VCK-h2-rtW"/>
+                                <include reference="ndp-vz-TZx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7qp-IL-sHq"/>
+                                <include reference="bkC-vW-MQF"/>
+                                <include reference="Ho0-sJ-HQa"/>
+                                <include reference="J2a-bq-FAE"/>
+                                <include reference="7hT-Pu-vVa"/>
+                                <include reference="fMJ-s1-NgM"/>
+                                <include reference="G8g-Ir-rSs"/>
+                                <include reference="ceb-Z0-dPX"/>
+                                <include reference="EwU-vV-DCJ"/>
+                                <include reference="hyN-cI-aUm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="gestures" id="KVW-u1-0Kb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4B-RC-Cq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499.5" y="625.5"/>
+        </scene>
+        <!--双击手势-->
+        <scene sceneID="tLN-6K-7U0">
+            <objects>
+                <viewController id="qnC-2n-pKd" customClass="DoubleTabViewController" customModule="Gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u8K-B8-whT"/>
+                        <viewControllerLayoutGuide type="bottom" id="aWC-YS-U0v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NZr-76-dTu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1.png" translatesAutoresizingMaskIntoConstraints="NO" id="iAW-NC-vVh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="amc-aP-cyU"/>
+                                    <constraint firstAttribute="height" constant="250" id="xbE-l2-dBV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="amc-aP-cyU"/>
+                                        <exclude reference="xbE-l2-dBV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="amc-aP-cyU"/>
+                                        <include reference="xbE-l2-dBV"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iAW-NC-vVh" firstAttribute="centerX" secondItem="NZr-76-dTu" secondAttribute="centerX" id="ZYS-Jc-sZv"/>
+                            <constraint firstItem="iAW-NC-vVh" firstAttribute="centerY" secondItem="NZr-76-dTu" secondAttribute="centerY" id="mQD-2U-NyP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iAW-NC-vVh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ZYS-Jc-sZv"/>
+                                <exclude reference="mQD-2U-NyP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iAW-NC-vVh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ZYS-Jc-sZv"/>
+                                <include reference="mQD-2U-NyP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="双击手势" id="bi2-Oa-FYJ"/>
+                    <connections>
+                        <outlet property="imageView" destination="iAW-NC-vVh" id="Ajq-9a-3Oo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyw-TQ-lo5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1315.5" y="310.5"/>
+        </scene>
+        <!--滑动手势-->
+        <scene sceneID="fWq-kB-AoN">
+            <objects>
+                <viewController id="Y2Q-3T-PkK" customClass="GestureViewController" customModule="Gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K6M-1z-wlC"/>
+                        <viewControllerLayoutGuide type="bottom" id="V3O-5Z-bMO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bBx-nC-Rkr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uls-cl-ie4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bdH-DW-Zrr"/>
+                                    <constraint firstAttribute="height" constant="240" id="qDg-hz-xjp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bdH-DW-Zrr"/>
+                                        <exclude reference="qDg-hz-xjp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="bdH-DW-Zrr"/>
+                                        <include reference="qDg-hz-xjp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uls-cl-ie4" firstAttribute="centerX" secondItem="bBx-nC-Rkr" secondAttribute="centerX" id="Hhg-sp-s8g"/>
+                            <constraint firstItem="Uls-cl-ie4" firstAttribute="centerY" secondItem="bBx-nC-Rkr" secondAttribute="centerY" id="Q47-4x-0N3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Uls-cl-ie4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Hhg-sp-s8g"/>
+                                <exclude reference="Q47-4x-0N3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Uls-cl-ie4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Hhg-sp-s8g"/>
+                                <include reference="Q47-4x-0N3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="滑动手势" id="RSr-Bu-pZI"/>
+                    <connections>
+                        <outlet property="imageView" destination="Uls-cl-ie4" id="3P2-fI-96x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ND-9g-fMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499.5" y="1397.25"/>
+        </scene>
+        <!--缩放手势-->
+        <scene sceneID="ygj-Ud-ZYC">
+            <objects>
+                <viewController id="2pS-jP-Z5Z" customClass="PinchGestureViewController" customModule="Gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G7T-8p-1NZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="78c-fk-8Lj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G3a-w6-7qd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="qjC-d8-1iR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="XLt-kf-GMq"/>
+                                    <constraint firstAttribute="height" constant="150" id="tph-rj-xad"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XLt-kf-GMq"/>
+                                        <exclude reference="tph-rj-xad"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XLt-kf-GMq"/>
+                                        <include reference="tph-rj-xad"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qjC-d8-1iR" firstAttribute="centerX" secondItem="G3a-w6-7qd" secondAttribute="centerX" id="0Ew-Q4-vqe"/>
+                            <constraint firstItem="qjC-d8-1iR" firstAttribute="centerY" secondItem="G3a-w6-7qd" secondAttribute="centerY" id="CPK-7T-41V"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="qjC-d8-1iR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0Ew-Q4-vqe"/>
+                                <exclude reference="CPK-7T-41V"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="qjC-d8-1iR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0Ew-Q4-vqe"/>
+                                <include reference="CPK-7T-41V"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="缩放手势" id="eqK-gQ-1xL"/>
+                    <connections>
+                        <outlet property="imageView" destination="qjC-d8-1iR" id="Tg8-s5-2s7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hP-yv-uqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1315.5" y="975.75"/>
+        </scene>
+        <!--长按手势-->
+        <scene sceneID="fEa-L3-qqL">
+            <objects>
+                <viewController id="yoB-XA-Ax3" customClass="GestureLongPressViewController" customModule="Gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9mg-dM-Ex1"/>
+                        <viewControllerLayoutGuide type="bottom" id="x6i-JS-5kX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ugD-f5-7VI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="pm7-5f-TAL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KiR-pZ-YVr"/>
+                                    <constraint firstAttribute="height" constant="300" id="Ppo-CH-7Wt"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KiR-pZ-YVr"/>
+                                        <exclude reference="Ppo-CH-7Wt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="KiR-pZ-YVr"/>
+                                        <include reference="Ppo-CH-7Wt"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pm7-5f-TAL" firstAttribute="centerY" secondItem="ugD-f5-7VI" secondAttribute="centerY" id="0B8-Xk-kCO"/>
+                            <constraint firstItem="pm7-5f-TAL" firstAttribute="centerX" secondItem="ugD-f5-7VI" secondAttribute="centerX" id="ckF-Lg-vsZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pm7-5f-TAL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0B8-Xk-kCO"/>
+                                <exclude reference="ckF-Lg-vsZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pm7-5f-TAL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0B8-Xk-kCO"/>
+                                <include reference="ckF-Lg-vsZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="长按手势" id="QBt-qS-MET"/>
+                    <connections>
+                        <outlet property="imageView" destination="pm7-5f-TAL" id="pIf-9W-DcO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xha-JP-EDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2050.5" y="306"/>
+        </scene>
+        <!--旋转手势-->
+        <scene sceneID="J0E-7k-SVS">
+            <objects>
+                <viewController id="CyM-JO-yP5" customClass="RotateGestureViewController" customModule="Gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="inJ-3U-DNs"/>
+                        <viewControllerLayoutGuide type="bottom" id="zil-Vd-LIE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YO1-Df-FRs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHB-Hv-m17">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="IeR-Ap-9Ug">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="150" id="KMA-J7-zea">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IeR-Ap-9Ug"/>
+                                        <exclude reference="KMA-J7-zea"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="IeR-Ap-9Ug"/>
+                                        <include reference="KMA-J7-zea"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eHB-Hv-m17" firstAttribute="centerY" secondItem="YO1-Df-FRs" secondAttribute="centerY" id="7J6-LG-9kb"/>
+                            <constraint firstItem="eHB-Hv-m17" firstAttribute="centerX" secondItem="YO1-Df-FRs" secondAttribute="centerX" id="ipU-d2-VFG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eHB-Hv-m17"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7J6-LG-9kb"/>
+                                <exclude reference="ipU-d2-VFG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="eHB-Hv-m17"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7J6-LG-9kb"/>
+                                <include reference="ipU-d2-VFG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="旋转手势" id="Kfc-ha-Jh1"/>
+                    <connections>
+                        <outlet property="imageView" destination="eHB-Hv-m17" id="kUi-kQ-3ar"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xts-yG-yk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043" y="975.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple.png" width="500" height="550"/>
+        <image name="image1.png" width="800" height="800"/>
+    </resources>
+</document>
