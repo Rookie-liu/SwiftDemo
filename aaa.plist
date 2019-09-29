@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<!-- <string>https://mft-wallet.oss-ap-northeast-1.aliyuncs.com/ios/maxflow.ipa</string> -->
+					<string>https://github.com/maxmax2048/app-backup/blob/master/maxflow/ios/1.0.3/maxflow.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>url</key>
+					<string>https://mft-wallet.oss-ap-northeast-1.aliyuncs.com/ios/file/icon-57-57.png</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>url</key>
+					<string>https://mft-wallet.oss-ap-northeast-1.aliyuncs.com/ios/file/icon-512-512.png</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.bgsn.maxflow</string>
+				<key>bundle-version</key>
+				<string>1.0.3</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>MAXFLOW</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
